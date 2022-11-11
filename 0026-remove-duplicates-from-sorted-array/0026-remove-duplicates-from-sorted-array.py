@@ -2,8 +2,7 @@ class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         i = 0;
         j = 1;
-        l = len(nums)
-        while(j<l):
+        while(j<len(nums)):
             if(nums[j]==nums[i]):
                 j=j+1;
             else:
