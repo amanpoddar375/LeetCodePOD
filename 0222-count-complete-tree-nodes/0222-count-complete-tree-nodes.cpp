@@ -44,3 +44,5 @@ public:
     }
     
 };
+
+//TC : O(logN)^2
