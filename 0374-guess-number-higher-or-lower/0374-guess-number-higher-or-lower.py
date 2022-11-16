@@ -9,10 +9,10 @@ class Solution:
     def guessNumber(self, n):
         l = 1
         h = n
-        while(l<h):
+        while(l<=h):
             m =(l+h)//2
             if(guess(m)==-1):
-                h = m
+                h = m -1 
             elif(guess(m)==1):
                 l = m+1
             else:
