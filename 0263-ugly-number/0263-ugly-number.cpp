@@ -1,12 +1,12 @@
 class Solution {
 public:
-    bool isUgly(int n) {
-        if(n<=0)
-            return false;
-        std::vector<int> v = { 2,3,5 };
-        for (auto i : v)
-            while(n%i==0)
-                n/=i;
-        return n==1;
+    bool isUgly(int num) {
+        if(num == 0) return false;
+    
+        while(num%2 == 0) num/=2;
+        while(num%3 == 0) num/=3;
+        while(num%5 == 0) num/=5;
+    
+        return num == 1;
     }
 };
