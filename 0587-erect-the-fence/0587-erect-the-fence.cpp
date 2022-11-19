@@ -2,11 +2,9 @@ class Solution {
 public:
     
     int getRotationAngle(vector<int> A, vector<int> B, vector<int> C) {
-        // (y3-y1)(x2-x1) - (y2-y1)(x3-x1) -> 3D Cross-product of AB and AC vectors
         return ((C[1] - A[1]) * (B[0] - A[0])) - ((B[1] - A[1]) * (C[0] - A[0]));
     }
     vector<vector<int>> outerTrees(vector<vector<int>>& trees) {
-        //If less then or equal to 3 return Trees. They all need to included.
         if (trees.size() <= 3) return trees;
         
         sort(trees.begin(), trees.end());
