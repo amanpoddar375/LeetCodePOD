@@ -7,7 +7,7 @@ public:
         stack<pair<int,int>>stk;
         
         for(int i =0; i<n;i++){
-            if(s[i] >= '0' && s[i]<= '9'){
+            if(isdigit(s[i])){
                 int num = 0;
                 while(i<n && isdigit(s[i])){
                     num = num *10 + (s[i] - '0');
