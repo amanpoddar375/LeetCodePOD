@@ -4,15 +4,14 @@ public:
         int rows = maze.size();
         int columns = maze[0].size();
         queue<pair<int, int>>q;
-        int steps = 0;
+        int steps = 1;
         
-        vector<vector<int>>direction = {{0,1},{0,-1},{-1,0},{1,0}};
+        vector<vector<int>>direction = {{0,1},{0,-1},{1,0},{-1,0}};
         q.push({entrance[0], entrance[1]});
         maze[entrance[0]][entrance[1]] = '+';
         
         while(!q.empty()){
             int l = q.size();
-            steps++;
             for(int i = 0; i<l; i++){
                 auto [x_cord,y_cord]=q.front();
                 q.pop();
@@ -28,6 +27,7 @@ public:
                     q.push({x,y});
                 }
             }
+            steps++;
         }
         return -1;
     }
