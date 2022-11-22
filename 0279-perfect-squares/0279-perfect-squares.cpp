@@ -8,7 +8,7 @@ public:
             n/=4;
         if(n%8==7)      
             return 4;
-        for(int i=1;i*i<=n;++i)
+        for(int i=1;i*i<=n;i++)
         {
             int b= sqrt(n-i*i);
             if(b*b==(n-i*i))
