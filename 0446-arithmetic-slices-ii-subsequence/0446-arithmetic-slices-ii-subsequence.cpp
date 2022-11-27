@@ -7,6 +7,9 @@ public:
         for(int i = 1; i<n; i++){
             for(int j = 0; j<i; j++){
                 long long d = (long long)nums[i] - (long long) nums[j];
+                if(d<= INT_MIN || d >= INT_MAX){
+                    continue;
+                }
                 int s = 0;
                 if(dp[j].find(d) != dp[j].end()){
                     s = dp[j][d];
