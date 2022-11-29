@@ -23,7 +23,7 @@ class RandomizedSet:
         return False
 
     def getRandom(self) -> int:
-        return random.choice(self.data)
+        return self.data[random.randint(0, len(self.data) - 1)]
         
 
 
