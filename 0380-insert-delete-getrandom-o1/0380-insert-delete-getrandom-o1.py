@@ -18,7 +18,7 @@ class RandomizedSet:
             self.data[i] = l
             self.datamap[l] = i
             self.data.pop()
-            self.datamap.pop(val,0)
+            del self.datamap[val]
             return True
         return False
 
