@@ -20,8 +20,9 @@ public:
                     break;
             }
             long spavg = (totalsum - currentsum)/(n-i-1);
-            if(abs(fpavg - spavg)< minsum){
-                minsum = abs(fpavg - spavg);
+            long diff = abs(fpavg - spavg);
+            if(diff< minsum){
+                minsum = diff;
                 answerIndex = i;
             }
         }
