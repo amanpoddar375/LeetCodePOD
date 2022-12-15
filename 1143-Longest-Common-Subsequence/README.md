@@ -40,3 +40,5 @@
 	<li><code>text1</code> and <code>text2</code> consist of only lowercase English characters.</li>
 </ul>
 </div>
+
+<h2><a href="https://leetcode.com/problems/longest-common-subsequence/solutions/2914728/pythonc-simple-solution-with-detailed-explaination/">FOR SOLUTION: CLICK HERE</a>
