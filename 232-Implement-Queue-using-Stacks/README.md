@@ -48,3 +48,5 @@ myQueue.empty(); // return false
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Can you implement the queue such that each operation is <strong><a href="https://en.wikipedia.org/wiki/Amortized_analysis" target="_blank">amortized</a></strong> <code>O(1)</code> time complexity? In other words, performing <code>n</code> operations will take overall <code>O(n)</code> time even if one of those operations may take longer.</p>
 </div></div>
+
+<h2><a href="https://leetcode.com/problems/implement-queue-using-stacks/discuss/2916363/PythonC++-Simple-Solution-with-detailed-explaination.">FOR DETAILED EXPLAINATION OF SOLUTION: CLICK HERE</a>
