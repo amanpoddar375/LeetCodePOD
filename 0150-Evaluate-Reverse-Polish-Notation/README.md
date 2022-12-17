@@ -44,3 +44,5 @@
 	<li><code>tokens[i]</code> is either an operator: <code>"+"</code>, <code>"-"</code>, <code>"*"</code>, or <code>"/"</code>, or an integer in the range <code>[-200, 200]</code>.</li>
 </ul>
 </div></div>
+
+<h2><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/discuss/2920779/Pythonoror-C++-oror-Stack-oror-O(N)-oror-Detailed-Explaination">FOR DETAILED EXPLAINATION OF SOLUTION: CLICK HERE</a>
