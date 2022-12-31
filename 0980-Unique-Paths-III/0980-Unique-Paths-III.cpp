@@ -37,3 +37,10 @@ private:
         return paths;
     }
 };
+/* TC: O(4^s), where s is the number of empty squares in the grid.
+This is because the dfs function is called once for each empty square, 
+and at each step, the function calls itself 4 times (once for each possible move).*/
+
+/* SC: O(4^s), since the maximum depth of the recursion tree is s. 
+This is because at each step, the function calls itself 4 times, 
+and the maximum depth of the recursion tree is the number of empty squares in the grid.*/
