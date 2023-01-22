@@ -12,3 +12,6 @@ class Solution:
                     if self.check(a) and self.check(b) and self.check(c) and self.check(d):
                         ans.append(f'{a}.{b}.{c}.{d}')
         return ans
+
+## TC : O(n^3), where n is the length of the given string as it uses three nested loops to check for all possible combinations of IP addresses.
+## SC : O(1), as it only uses a constant amount of variables to store the IP address segments and the final answer.
