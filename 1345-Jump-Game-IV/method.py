@@ -22,6 +22,7 @@ class Solution:
             step += 1
         return -1
 
-'''# TC : O(n), where n is the length of the input array. The worst-case scenario is when all the elements in the array are the same. In this case, we need to visit all the elements at least once to compute the minimum number of steps required to reach the last index.'''
+'''# TC : O(n), where n is the length of the input array. The worst-case scenario is when all the elements in the array are the same. 
+In this case, we need to visit all the elements at least once to compute the minimum number of steps required to reach the last index.'''
 
 '''# SC : O(n) as we are using a queue to perform the BFS traversal and a dictionary to store the indices of each element in the array.'''
