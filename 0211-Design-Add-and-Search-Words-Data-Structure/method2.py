@@ -15,17 +15,15 @@ class WordDictionary:
             if i == len(word):
                 return '$' in node
             if word[i] == '.':
-                for child in node.values():
-                    if dfs(child, i + 1):
+                for child in node:
+                    if isinstance(node[child], dict) and dfs(node[child], i + 1):
                         return True
+            if word[i] not in node:
                 return False
-            else:
-                if word[i] not in node:
-                    return False
-                return dfs(node[word[i]], i + 1)
+            return dfs(node[word[i]], i + 1)
+
 
         return dfs(self.trie, 0)
-
       
 '''
 # Time Complexity:
