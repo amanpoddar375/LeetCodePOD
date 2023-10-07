@@ -15,3 +15,12 @@ class Solution:
                         cur = (cur + dp[i - 1][j]) % mod
         
         return sum(dp[-1]) % mod
+    
+# TC :  O(n * m * k), 
+# where n is the input parameter n.
+# m is the input parameter m.
+# k is the input parameter k.
+
+# SC :  O(k * m),where
+# k is the input parameter k.
+# m is the input parameter m.
