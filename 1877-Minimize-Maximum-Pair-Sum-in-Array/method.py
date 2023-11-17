@@ -10,3 +10,6 @@ class Solution:
             max_pair_sum = max(max_pair_sum, pair_sum)
 
         return max_pair_sum
+    
+# TC : O(n log n), where n is the length of the input array nums. 
+# SC : O(1)
